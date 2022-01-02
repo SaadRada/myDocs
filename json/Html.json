@@ -1,0 +1,35 @@
+{
+    "language": "html",
+    "header": [
+        "HTML is the standard markup language for Web pages.",
+        "With HTML you can create your own Website.",
+        "HTML is easy to learn - You will enjoy it!"
+    ],
+    "content": [
+        {
+            "title": "HTML Syntax",
+            "text": "All HTML documents must start with a document type declaration: <!DOCTYPE html>. -The <header> tag has the server infos and links -The <body> tag has thee visible content in the browser",
+            "code": "<!DOCTYPE html> -<html>- <heade> - _ ... - <\/header> - <body>- _ ... -<\/body>-<\/html>"
+        },
+        {
+            "title": "HTML Elements",
+            "text": "All HTML content has an open and close tags",
+            "code": "<openTag> ... <\/closeTag>"
+        },
+        {
+            "title": "HTML Headings",
+            "text": "<h1> to <h6>",
+            "code": "<h1> ... <\/h1> -<h2> ... <\/h2> -...- <h6> ... <\/h6>"
+        },
+        {
+            "title": "HTML paragraphe",
+            "text": "The HTML <p> element defines a paragraph. -A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.",
+            "code": "<p>a simplee paragraphe<\/p>"
+        },
+        {
+            "title": "Links",
+            "text": "links is use to link between pages",
+            "code": "<a href=\"url\">link name<\/a>"
+        }
+    ]
+}

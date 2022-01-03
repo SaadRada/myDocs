@@ -36,12 +36,23 @@ function sendData(){
     }
 }
 
-let btn = document.querySelector("button");
 
-btn.onclick = function(){
-    sendData()
+// toggle cards
+function openCard(id,evnt){
+    let cards = document.querySelectorAll(".add");
+
+    cards.forEach(card=>{
+        card.style.display = "none";
+    })
+
+    document.querySelector(`#${id}`).style.display = "block";
+
+    document.querySelectorAll("button").forEach(btn => {
+        btn.classList.remove("active");
+    })
+    evnt.classList.add("active")
 }
-
+openCard("doc",document.querySelector("button:first-child"));
 
 
 

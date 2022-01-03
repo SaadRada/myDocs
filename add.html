@@ -8,25 +8,50 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/add.css">
     <script src="js/add.js"  defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery3.5.1.min.js"></script>
 </head>
 <body>
-    <div class="add">
-        <h1>Add new doc</h1>
-        <select></select>
-        <div>
-            <label>title</label>
-            <input type="text" name="" id="title">
+    <div>
+        <header>
+            <button class="active" onclick="openCard('doc',this)">doc</button>
+            <button onclick="openCard('nav',this)">nav</button>
+            <button>click</button>
+            <button>click</button>
+        </header>
+        <div class="add" id="doc">
+            <h1>Add new doc</h1>
+            <select></select>
+            <div>
+                <label>title</label>
+                <input type="text" name="" id="title">
+            </div>
+            <div>
+                <label>text</label>
+                <textarea name="" id="text" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label>code</label>
+                <textarea name="" id="code" cols="30" rows="10"></textarea>
+            </div>
+            <button onclick="sendData()">Add doc</button>
         </div>
-        <div>
-            <label>text</label>
-            <textarea name="" id="text" cols="30" rows="10"></textarea>
+        <div class="add" id="nav">
+            <h1>Add new nav item</h1>
+            <div>
+                <label>Langauge Name</label>
+                <input type="text" name="" id="title">
+            </div>
+            <div>
+                <label>icon</label>
+                <input type="text" name="" id="title">
+            </div>
+            <div>
+                <label>Header</label>
+                <input type="text" name="" id="title">
+            </div>
+            <button>Add doc</button>
         </div>
-        <div>
-            <label>code</label>
-            <textarea name="" id="code" cols="30" rows="10"></textarea>
-        </div>
-        <button>Add doc</button>
     </div>
+    
 </body>
 </html>

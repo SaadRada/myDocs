@@ -1,5 +1,5 @@
 [
-    {"name" : "Html" , "icon" : "<i class='fab fa-html5'></i>"},
-    {"name" : "css",  "icon" : "<i class='fab fa-css3-alt'></i>"},
-    {"name" : "JavaScript",  "icon" : "<i class='fab fa-js'></i>"}
+    {"name" : "Html" , "icon" : "<i class='fab fa-html5'></i>", "category" : "front-end"},
+    {"name" : "css",  "icon" : "<i class='fab fa-css3-alt'></i>", "category" : "front-end"},
+    {"name" : "JavaScript",  "icon" : "<i class='fab fa-js'></i>", "category" : "front-end"}
 ]

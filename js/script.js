@@ -1,3 +1,12 @@
+// scrollToTop
+let scrollToTop = document.querySelector(".scrollToTop");
+
+scrollToTop.onclick = function(){
+    window.scroll({
+        top : 0,
+        behavior : "smooth"
+    })
+}
 // toggle navbar
 let closeBars = document.querySelector("#closeBars");
 
@@ -50,7 +59,7 @@ async function getData(link){
             </div>
             <div class="code">
             <button class="copy" onclick="copyCode(this)">copy</button>
-                <code class="4">
+                <code>
                     ${element.code.replace(/</g, "&lt").replace(/-/g,"<br>").replace(/_/g,"&emsp;")}
                 </code>
             </div>

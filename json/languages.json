@@ -1,0 +1,5 @@
+[
+    {"name" : "Html" , "icon" : "<i class='fab fa-html5'></i>"},
+    {"name" : "css",  "icon" : "<i class='fab fa-css3-alt'></i>"},
+    {"name" : "JavaScript",  "icon" : "<i class='fab fa-js'></i>"}
+]

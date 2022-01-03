@@ -49,7 +49,8 @@ async function getData(link){
                 ${element.text.replace(/</g, "&lt").replace(/-/g,"<br>").replace(/_/g,"&emsp;")}
             </div>
             <div class="code">
-                <code>
+            <button class="copy" onclick="copyCode(this)">copy</button>
+                <code class="4">
                     ${element.code.replace(/</g, "&lt").replace(/-/g,"<br>").replace(/_/g,"&emsp;")}
                 </code>
             </div>
@@ -57,6 +58,14 @@ async function getData(link){
     });
 }
 getData("html")
+
+
+function copyCode(element){
+    let copyText = element.parentElement.querySelector(':nth-child(2)').textContent
+
+    
+    navigator.clipboard.writeText(copyText);
+}
 
 
 

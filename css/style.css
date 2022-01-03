@@ -133,4 +133,15 @@ main .container .content .code {
     color: white;
     padding: 20px;
     font-size: 15px;
+    position: relative;
+}
+main .container .content .code .copy {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
